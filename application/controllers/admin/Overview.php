@@ -10,7 +10,7 @@ class Overview extends CI_Controller {
 
 	public function index()
 	{
-		$nilai['data'] = $this->mod_admin->tampil_data()->result();
+		$nilai['total_pesurvei'] = $this->mod_admin->get_total();
         // load view admin/overview.php
         $this->load->view("admin/overview", $nilai);
 	}
@@ -18,4 +18,8 @@ class Overview extends CI_Controller {
 	public function load_pidana(){
 		$this->load->view("admin/admin_pidana");
 	}
+
+	//public function get_total(){
+
+	//}
 }

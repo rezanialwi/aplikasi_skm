@@ -4,16 +4,17 @@
 	<title>Survei Kepuasan Pelanggan</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<!-- javascript -->
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 </head>
-<body style="background-image:url(<?= base_url('assets/img/pengadilan.jpg'); ?>); background-size:cover;">
+<body style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(255,255,255,0.08)),url(<?= base_url('assets/img/pengadilan.jpg'); ?>); background-repeat: no-repeat; background-size: cover;">
 <div class="container">
 	<div class="row">
-		<div class="header">
-			<h1>Survei Kepuasan Pelanggan</h1>
-			<h1>Pengadilan Negeri Banjarmasin</h1>
+		<div class="header" style="color:#fff">
+			<h1 style="font-family:Oswald; font-size:3.3em">Survei Kepuasan Pelanggan</h1>
+			<h1 style="font-family:Helvetica; font-size:1.8em">Pengadilan Negeri Banjarmasin</h1>
 		</div>
 	</div>
 	<br/>
@@ -24,58 +25,58 @@
 		</div>
 	</div>
 </div>
-<div class="row konten">
+<div class="row konten" style="padding-top:3.5em; height:26.9em;">
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
-				<a data-toggle="modal" data-target="#modalPidana" href="#" class="viewContact" ><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+				<a data-toggle="modal" data-target="#modalPidana" href="#" class="viewContact"><img
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Pidana/Tipikor</h4>
+					<h4 style="font-family:Roboto;">Pidana/Tipikor</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
 				<a  data-toggle="modal" data-target="#modalHukum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Hukum</h4>
+					<h4 style="font-family:Roboto;">Hukum</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
 				<a  data-toggle="modal" data-target="#modalUmum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Umum & Keuangan</h4>
+					<h4 style="font-family:Roboto;">Umum & Keuangan</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
 				<a  data-toggle="modal" data-target="#modalPerdata" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Perdata/PHI</h4>
+					<h4 style="font-family:Roboto;">Perdata/PHI</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
-				<a  data-toggle="modal" data-target="#modalKasir" href="#" class="viewContact" ><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+				<a  data-toggle="modal" data-target="#modalKasir" href="#" class="viewContact"><img
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Kasir</h4>
+					<h4 style="font-family:Roboto;">Kasir</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
-				<a  data-toggle="modal" data-target="#modalBank" href="#" class="viewContact" ><img
-						src="<?php echo base_url() ?>assets/img/logo/logo2.jpeg" width="70" alt="Perempuan"></a>
+				<a  data-toggle="modal" data-target="#modalBank" href="#" class="viewContact"><img
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4>Bank</h4>
+					<h4 style="font-family:Roboto;">Bank</h4>
 				</div>
 			</div>
 		</div>
@@ -83,7 +84,7 @@
 </div>
 
 <div class="modal fade" id="modalPidana" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog" style="width: 75%">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -157,19 +158,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
 								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
-								&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; 
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
 								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
-								&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; 
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
 								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
-								Sangat puas
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -185,7 +191,7 @@
 </div>
 
 <div class="modal fade" id="modalHukum" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -259,17 +265,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png">
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png">								
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png">
-								Sangat puas
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -285,7 +298,7 @@
         </div>
 
 <div class="modal fade" id="modalUmum" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -359,17 +372,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png">
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png">								
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png">
-								Sangat puas
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -385,7 +405,7 @@
         </div>
 
 <div class="modal fade" id="modalPerdata" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -459,17 +479,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png">
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png">								
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png">
-								Sangat puas
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -485,7 +512,7 @@
         </div>
 
         <div class="modal fade" id="modalKasir" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -559,17 +586,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png">
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png">								
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png">
-								Sangat puas
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -585,7 +619,7 @@
         </div>
 
         <div class="modal fade" id="modalBank" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
@@ -659,17 +693,24 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
-                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png">
-								Tidak puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png">								
-								Cukup puas
-							</br>
-							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios">
-								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png">
-								Sangat puas
+						<label class="radio-inline">
+                             <input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Tidak puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/tidak_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Tidak puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Cukup puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/cukup_puas.png"><br/>		
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Cukup puas</b>
+						</label>
+						<label class="radio-inline">	
+							<input name="tingkat_kepuasan" type="radio" class="custom-control-input" value="Sangat puas" name="groupOfRadios" required>
+								<img src="<?php echo base_url() ?>assets/img/sangat_puas.png"><br/>
+								&nbsp;  &nbsp;  &nbsp;
+								<b>Sangat puas</b>
+						</label>		
                         </div>
                     </div>
  
@@ -685,119 +726,31 @@
         </div>
         <!--END MODAL ADD BARANG-->
 
-<!--
-<div id="modalResponden" class="modal fade" role="dialog">
-      <div class="modal-dialog" style="width:50%;">
-	  //modal-lg
-        <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Silahkan isi data diri anda untuk memulai survei : 
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
-			  </button>
-			  </h5>
-            </div>
-            <div class="modal-body">
-              <p id="showid"></p>
-              <form action="<?=base_url()?>prosesmodel/add" method="post">
-                <input type="hidden" name="nama_responden" id="nama_responden" class="form-control" >
-                <table class="table table-striped">
-                  <tr>
-                    <td>Nama<br></td>
-                    <td>
-                      <div class="col-sm-8">
-                        <input size="50" type="text" name="NAMA" class="form-control" required>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Umur<br></td>
-                    <td>
-                      <div class="col-sm-4">
-                        <input type="number" name="UMUR" class="form-control" required>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Jenis Kelamin<br></td>
-                    <td>
-                      <div class="col-sm-8">
-                        <select name="JENIS_KELAMIN" class="form-control" required>
-                          <option value="Laki-laki">Laki-laki</option>
-                          <option value="Perempuan">Perempuan</option>
-                        </select>
-                      </div> 
-                    </td>
-                  </tr>
-                  <tr>
-					<td>Pekerjaan<br></td>
-                    <td>
-                      <div class="col-sm-8">
-                        <input size="50" type="text" name="PEKERJAAN" class="form-control" required>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-				  <td>Pendidikan terakhir<br></td>
-                    <td>
-                      <div class="col-sm-8">
-                        <select name="PENDIDIKAN" class="form-control" required>
-                          <option value="SD/SEDERAJAT">SD/Sederajat</option>
-                          <option value="SMP/SEDERAJAT">SMP/Sederajat</option>
-						  <option value="SMA/SEDERAJAT">SMA/Sederajat</option>
-						  <option value="S0">S0</option>
-						  <option value="S1">S1</option>
-						  <option value="S2">S2</option>
-						  <option value="S3">S3</option>
-                        </select>
-                      </div>
-                    </td>
-                  </tr>
-				  <tr>
-                   <td>tingkat kepuasan<br></td>
-						<td>
-						  	<div class="custom-control custom-radio">
-							<label class="custom-control-label" for="Tidak puas">
-								<input type="radio" class="custom-control-input" id="Tidak puas" name="groupOfRadios">
-								<img src="assets/img/tidak_puas.png"><br/>
-								&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-								Tidak puas
-							</label>
-							
-							<label class="custom-control-label" for="Cukup puas">
-								<input type="radio" class="custom-control-input" id="Cukup puas" name="groupOfRadios">
-								<img src="assets/img/cukup_puas.png"><br/>
-								&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-								Cukup puas
-							</label>
-							
-							<label class="custom-control-label" for="Sangat puas">
-								<input type="radio" class="custom-control-input" id="Sangat puas" name="groupOfRadios">
-								<img src="assets/img/sangat_puas.png"><br/>
-								&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-								Sangat puas
-							</label>
-							</div>
-						</td>
-                  </tr> 
-                  <tr>
-                    <td colspan="2">
-                      <input type="submit" class="btn btn-success" value="Simpan">
-                    </td>
-                  </tr>
-                </table>
-              </form>
-            </div>
-            <div class="modal-footer">
-              
-            </div>
-          </div>
-        </div>
-      </div>
--->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+	function get(c) {
+		$.ajax({
+			url: '<?php echo base_url(); ?>proses/AddSurveiGender',
+			type: 'post',
+			data: {
+				get: c
+			}		
+		});
+	}
+</script>
+<script type="text/javascript">
+	var tombol = document.getElementById("tombol");
 
-
-	
+	tombol.onclick = function(){
+		location.href = "umur";
+	}
+</script>
+	<hr/>	
 </div>
+<footer class="page-footer font-small pt-4" style="background-color:#000; color:#fff; height:25px;">
+		<div class="footer-copyright text-center py-3">© 2020 Copyright: Pengadilan Negeri Banjarmasin</div>
+</footer>
 </body>
 </html>

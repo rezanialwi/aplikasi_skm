@@ -50,7 +50,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="overview">
+        <a class="nav-link" href="<?php echo base_url();  ?>admin/overview">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -104,32 +104,32 @@
 
       <!-- Nav Item - Table Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="<?php echo base_url() ?>con_pidana" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link" href="<?php echo base_url(); ?>admin/con_pidana">
           <span>Pidana/Tipikor</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link collapsed" href="#">
           <span>Hukum</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link collapsed" href="#">
           <span>Umum & Keuangan</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link collapsed" href="#">
           <span>Perdata/PHI</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link collapsed" href="#">
           <span>Kasir</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+        <a class="nav-link collapsed" href="#">
           <span>Bank</span>
         </a>
       </li>
@@ -420,7 +420,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="<?php echo base_url(); ?>admin/con_pidana" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
           <!-- Content Row -->
@@ -435,7 +435,7 @@
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Pesurvei</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
-                        
+                        <?= $total_pesurvei ?>
 
                       </div>
                     </div>
