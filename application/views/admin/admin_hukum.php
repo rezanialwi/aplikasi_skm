@@ -65,12 +65,12 @@
       </div>
 
       <!-- Nav Item - Table Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>admin/con_pidana">
           <span>Pidana/Tipikor</span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_hukum">
           <span>Hukum</span>
         </a>
@@ -128,7 +128,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="<?php echo base_url(); ?>admin/con_pidana" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="<?php echo base_url(); ?>admin/con_hukum" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
           <!-- Content Row -->
@@ -220,11 +220,11 @@
   </a>
 
 <div id="content-wrapper" class="d-flex flex-column">
-	<div id="content" data-url="<?= base_url('admin/con_pidana') ?>">
+	<div id="content" data-url="<?= base_url('admin/con_hukum') ?>">
 		<div class="container-fluid">
 				<div class="clearfix">
 					<div class="float-left">
-						<h1 class="h3 m-0 text-gray-800">Tabel Kepuasan Bagian Pidana</h1>
+						<h1 class="h3 m-0 text-gray-800">Tabel Kepuasan Bagian Hukum</h1>
 					</div>
 				</div>
 				<br/>
@@ -247,17 +247,17 @@
 									</tr>
 								</thead>
 							</tbody>
-							<?php foreach ($all_pidana as $pidana): ?>
+							<?php foreach ($all_hukum as $hukum): ?>
 								<tr>
 											<td><?= $no++ ?></td>
-											<td><?= $pidana->id_bagian ?></td>
-											<td><?= $pidana->nama_responden ?></td>
-											<td><?= $pidana->umur_responden ?></td>
-											<td><?= $pidana->jenis_kelamin ?></td>
-											<td><?= $pidana->pekerjaan_responden ?></td>
-											<td><?= $pidana->pendidikan_responden ?></td>
-											<td><?= $pidana->tingkat_kepuasan ?></td>
-											<td><?= $pidana->waktu_input ?></td>
+											<td><?= $hukum->id_bagian ?></td>
+											<td><?= $hukum->nama_responden ?></td>
+											<td><?= $hukum->umur_responden ?></td>
+											<td><?= $hukum->jenis_kelamin ?></td>
+											<td><?= $hukum->pekerjaan_responden ?></td>
+											<td><?= $hukum->pendidikan_responden ?></td>
+											<td><?= $hukum->tingkat_kepuasan ?></td>
+											<td><?= $hukum->waktu_input ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
@@ -304,156 +304,7 @@
   <!-- Page level plugins -->
  <script src="<?php echo base_url('assets/chart.js/Chart.min.js') ?>"></script>
 
-  <!-- Page level custom scripts -->
-  <script type="text/javascript">
-    // Set new default font family and font color to mimic Bootstrap's default styling
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
-
-// Pie Chart Example
-var ctx = document.getElementById("myPieChart");
-var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Sangat Puas", "Cukup Puas", "Kurang Puas"],
-    datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
-});
-
-  </script>
-  <script type="text/javascript">
-    // Set new default font family and font color to mimic Bootstrap's default styling
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
-
-
-function number_format(number, decimals, dec_point, thousands_sep) {
-  // *     example: number_format(1234.56, 2, ',', ' ');
-  // *     return: '1 234,56'
-  number = (number + '').replace(',', '').replace(' ', '');
-  var n = !isFinite(+number) ? 0 : +number,
-    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
-    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
-    dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
-    s = '',
-    toFixedFix = function(n, prec) {
-      var k = Math.pow(10, prec);
-      return '' + Math.round(n * k) / k;
-    };
-  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
-  s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
-  if (s[0].length > 3) {
-    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
-  }
-  if ((s[1] || '').length < prec) {
-    s[1] = s[1] || '';
-    s[1] += new Array(prec - s[1].length + 1).join('0');
-  }
-  return s.join(dec);
-}
-
-// Area Chart Example
-var ctx = $("#myAreaChart");
-var lineChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: [{
-      label: "Pengunjung",
-      data: [90, 20, 15, 13, 14, 15, 14, 13, 12, 12, 12, 19],
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    layout: {
-      padding: {
-        left: 10,
-        right: 25,
-        top: 25,
-        bottom: 0
-      }
-    },
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'date'
-        },
-        gridLines: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          maxTicksLimit: 7
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '' + number_format(value);
-          }
-        },
-        gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
-        }
-      }],
-    },
-    legend: {
-      display: false
-    },
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
-      titleFontSize: 14,
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      intersect: false,
-      mode: 'index',
-      caretPadding: 10,
-      callbacks: {
-        label: function(tooltipItem, chart) {
-          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
-        }
-      }
-    }
-  }
-});
-
-  </script> 
+   
 
 </body>
 
