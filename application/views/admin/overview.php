@@ -114,22 +114,22 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_umum">
           <span>Umum & Keuangan</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_perdata">
           <span>Perdata/PHI</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_kasir">
           <span>Kasir</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_bank">
           <span>Bank</span>
         </a>
       </li>
