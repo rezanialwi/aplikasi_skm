@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mod_kasir extends CI_Model {
+class Mod_tipikor extends CI_Model {
 
 	protected $_table = 'responden';
 

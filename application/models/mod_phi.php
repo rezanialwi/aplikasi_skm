@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mod_bank extends CI_Model {
+class Mod_phi extends CI_Model {
 
 	protected $_table = 'responden';
 

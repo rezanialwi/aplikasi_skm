@@ -40,7 +40,7 @@
     <ul class="navbar-nav navbar-light sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #204051">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand" href="<?php echo base_url();  ?>admin/overview">
+      <a class="sidebar-brand" href="<?php echo base_url();  ?>admin">
           <img src="<?php echo base_url('assets/img/logo/logo.png') ?>" style="width: 150px; height: 110px;">Survei Kepuasan
         
       </a>
@@ -50,7 +50,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url();  ?>admin/overview">
+        <a class="nav-link" href="<?php echo base_url();  ?>admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -67,7 +67,7 @@
       <!-- Nav Item - Table Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>admin/con_pidana">
-          <span>Pidana/Tipikor</span>
+          <span>Pidana</span>
         </a>
       </li>
       <li class="nav-item">
@@ -82,27 +82,21 @@
       </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_perdata">
-          <span>Perdata/PHI</span>
+          <span>Perdata</span>
         </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_kasir">
-          <span>Kasir</span>
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_tipikor">
+          <span>Tipikor</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_bank">
-          <span>Bank</span>
+      <li class="nav-item ">
+        <a class="nav-link collapsed" href="<?php echo base_url(); ?>admin/con_phi">
+          <span>PHI</span>
         </a>
       </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <div class="sidebar-heading">
-        <i class="fas fa-fw fa-table"></i>
-        Admin 
-      </div>
+      
 
 
       <!-- Sidebar Toggler (Sidebar) -->
@@ -128,7 +122,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="<?php echo base_url(); ?>admin/con_kasir" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="<?php echo base_url(); ?>admin/con_tipikor" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
           <!-- Content Row -->
@@ -220,11 +214,11 @@
   </a>
 
 <div id="content-wrapper" class="d-flex flex-column">
-	<div id="content" data-url="<?= base_url('admin/con_kasir') ?>">
+	<div id="content" data-url="<?= base_url('admin/con_tipikor') ?>">
 		<div class="container-fluid">
 				<div class="clearfix">
 					<div class="float-left">
-						<h1 class="h3 m-0 text-gray-800">Tabel Kepuasan Bagian Kasir</h1>
+						<h1 class="h3 m-0 text-gray-800">Tabel Kepuasan Bagian Tipikor</h1>
 					</div>
 				</div>
 				<br/>
@@ -247,17 +241,17 @@
 									</tr>
 								</thead>
 							</tbody>
-							<?php foreach ($all_kasir as $kasir): ?>
+							<?php foreach ($all_tipikor as $tipikor): ?>
 								<tr>
 											<td><?= $no++ ?></td>
-											<td><?= $kasir->id_bagian ?></td>
-											<td><?= $kasir->nama_responden ?></td>
-											<td><?= $kasir->umur_responden ?></td>
-											<td><?= $kasir->jenis_kelamin ?></td>
-											<td><?= $kasir->pekerjaan_responden ?></td>
-											<td><?= $kasir->pendidikan_responden ?></td>
-											<td><?= $kasir->tingkat_kepuasan ?></td>
-											<td><?= $kasir->waktu_input ?></td>
+											<td><?= $tipikor->id_bagian ?></td>
+											<td><?= $tipikor->nama_responden ?></td>
+											<td><?= $tipikor->umur_responden ?></td>
+											<td><?= $tipikor->jenis_kelamin ?></td>
+											<td><?= $tipikor->pekerjaan_responden ?></td>
+											<td><?= $tipikor->pendidikan_responden ?></td>
+											<td><?= $tipikor->tingkat_kepuasan ?></td>
+											<td><?= $tipikor->waktu_input ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>

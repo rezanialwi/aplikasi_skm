@@ -13,7 +13,7 @@
 <div class="container">
 	<div class="row">
 		<div class="header" style="color:#fff">
-			<h1 style="font-family:Oswald; font-size:3.3em">Survei Kepuasan Pelanggan</h1>
+			<h1 style="font-family:Oswald; font-size:3.3em">Survei Harian Kepuasan Masyarakat</h1>
 			<h1 style="font-family:Helvetica; font-size:1.8em">Pengadilan Negeri Banjarmasin</h1>
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 				<a data-toggle="modal" data-target="#modalPidana" href="#" class="viewContact"><img
 						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Pidana/Tipikor</h4>
+					<h4 style="font-family:Roboto;">Pidana</h4>
 				</div>
 			</div>
 		</div>
@@ -58,25 +58,25 @@
 				<a  data-toggle="modal" data-target="#modalPerdata" href="#" class="viewContact"><img
 						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Perdata/PHI</h4>
+					<h4 style="font-family:Roboto;">Perdata</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
-				<a  data-toggle="modal" data-target="#modalKasir" href="#" class="viewContact"><img
+				<a  data-toggle="modal" data-target="#modalTipikor" href="#" class="viewContact"><img
 						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Kasir</h4>
+					<h4 style="font-family:Roboto;">Tipikor</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
 			<div class="thumbnail" >
-				<a  data-toggle="modal" data-target="#modalBank" href="#" class="viewContact"><img
+				<a  data-toggle="modal" data-target="#modalPHI" href="#" class="viewContact"><img
 						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Bank</h4>
+					<h4 style="font-family:Roboto;">PHI</h4>
 				</div>
 			</div>
 		</div>
@@ -511,7 +511,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modalKasir" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal fade" id="modalTipikor" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
             <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
@@ -618,7 +618,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modalBank" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal fade" id="modalPHI" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
             <div class="modal-dialog" style="width: 60%">
             <div class="modal-content">
             <div class="modal-header">
