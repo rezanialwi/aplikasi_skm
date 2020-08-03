@@ -27,56 +27,56 @@
 </div>
 <div class="row konten" style="padding-top:3.5em; height:26.9em;">
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail" style="background-color:#171717">
 				<a data-toggle="modal" data-target="#modalPidana" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Pidana</h4>
+					<h4 style="font-family:Roboto; color:white;">Pidana</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail" style="background-color:#001191;">
 				<a  data-toggle="modal" data-target="#modalHukum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Hukum</h4>
+					<h4 style="font-family:Roboto; color:white;">Hukum</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail"  style="background-color:#ab0000;">
 				<a  data-toggle="modal" data-target="#modalUmum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Umum & Keuangan</h4>
+					<h4 style="font-family:Roboto; color:white;">Umum & Keuangan</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail" style="background-color:#6900ab; color:white;">
 				<a  data-toggle="modal" data-target="#modalPerdata" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Perdata</h4>
+					<h4 style="font-family:Roboto; color:white;">Perdata</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail" style="background-color:#f20000;">
 				<a  data-toggle="modal" data-target="#modalTipikor" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">Tipikor</h4>
+					<h4 style="font-family:Roboto; color:white;">Tipikor</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" >
+			<div class="thumbnail" style="background-color:#00aee3; color:white;">
 				<a  data-toggle="modal" data-target="#modalPHI" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
 				<div class="caption">
-					<h4 style="font-family:Roboto;">PHI</h4>
+					<h4 style="font-family:Roboto; color:white;">PHI</h4>
 				</div>
 			</div>
 		</div>

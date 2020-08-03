@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Grafik extends CI_Controller {
+
+
+	function __construct(){
+		parent::__construct();
+		$this->load->model('mod_survei');
+	}
+
 	public function GetResult(){
 		$data = $this->mod_survei->GetResult();
 		return $this->load->view('admin/overview', $data, true);

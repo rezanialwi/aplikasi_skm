@@ -12,9 +12,10 @@ class Con_umum extends CI_Controller {
 
 	function index(){
 		$this->data['all_umum'] = $this->mod_umum->lihat();
+		//$this->data['kode_umum'] = $this->mod_umum->kode_umum();
 		$this->data['no'] = 1;
-		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_umum',$this->data);
+		//$a['data']=$this->mod_umum->show_umum();
+		$this->load->view('admin/tampil_umum', $this->data);
 
 	}
 }

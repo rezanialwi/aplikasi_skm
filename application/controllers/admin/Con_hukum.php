@@ -12,9 +12,10 @@ class Con_hukum extends CI_Controller {
 
 	function index(){
 		$this->data['all_hukum'] = $this->mod_hukum->lihat();
+		//$this->data['kode_hukum'] = $this->mod_hukum->kode_hukum();
 		$this->data['no'] = 1;
-		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_hukum',$this->data);
+		//$a['data']=$this->mod_hukum->show_hukum();
+		$this->load->view('admin/tampil_hukum', $this->data);
 
 	}
 }

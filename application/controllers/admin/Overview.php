@@ -15,9 +15,9 @@ class Overview extends CI_Controller {
         $this->load->view("admin/overview", $nilai);
 	}
 
-	public function load_pidana(){
-		$this->load->view("admin/admin_pidana");
-	}
+	//public function load_pidana(){
+	//	$this->load->view("admin/admin_pidana");
+	//}
 
 	//public function get_total(){
 

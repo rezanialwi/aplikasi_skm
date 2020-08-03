@@ -12,9 +12,10 @@ class Con_phi extends CI_Controller {
 
 	function index(){
 		$this->data['all_phi'] = $this->mod_phi->lihat();
+		//$this->data['kode_phi'] = $this->mod_phi->kode_phi();
 		$this->data['no'] = 1;
-		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_phi',$this->data);
+		//$a['data']=$this->mod_phi->show_phi();
+		$this->load->view('admin/tampil_phi', $this->data);
 
 	}
 }

@@ -12,9 +12,10 @@ class Con_tipikor extends CI_Controller {
 
 	function index(){
 		$this->data['all_tipikor'] = $this->mod_tipikor->lihat();
+		//$this->data['kode_tipikor'] = $this->mod_tipikor->kode_tipikor();
 		$this->data['no'] = 1;
-		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_tipikor',$this->data);
+		//$a['data']=$this->mod_tipikor->show_tipikor();
+		$this->load->view('admin/tampil_tipikor', $this->data);
 
 	}
 }

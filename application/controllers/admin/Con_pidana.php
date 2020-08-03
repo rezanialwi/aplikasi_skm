@@ -15,7 +15,7 @@ class Con_pidana extends CI_Controller {
 		//$this->data['kode_pidana'] = $this->mod_pidana->kode_pidana();
 		$this->data['no'] = 1;
 		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_pidana',$this->data);
+		$this->load->view('admin/tampil_pidana', $this->data);
 
 	}
 }

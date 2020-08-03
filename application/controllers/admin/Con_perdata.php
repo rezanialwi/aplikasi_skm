@@ -12,9 +12,10 @@ class Con_perdata extends CI_Controller {
 
 	function index(){
 		$this->data['all_perdata'] = $this->mod_perdata->lihat();
+		//$this->data['kode_perdata'] = $this->mod_perdata->kode_perdata();
 		$this->data['no'] = 1;
-		//$a['data']=$this->mod_pidana->show_pidana();
-		$this->load->view('admin/admin_perdata',$this->data);
+		//$a['data']=$this->mod_perdata->show_perdata();
+		$this->load->view('admin/tampil_perdata', $this->data);
 
 	}
 }
