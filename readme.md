@@ -1,4 +1,4 @@
-Survei Kepuasan Pelanggan
+Survei Kepuasan Masyarakat Harian
 
-Dibuat menggunakan bahasa PHP dengan Framework Codeigniter dan juga CSS (Bootstrap)
-Bersifat OpenSource memang dibuat untuk pembelajaran.
+Github untuk SKMH (Survei Kepuasan Masyarakat Harian) Pengadilan Negeri Banjarmasin.
+Survei dibuat untuk memenuhi tugas magang di Pengadilan Negeri Banjarmasin
