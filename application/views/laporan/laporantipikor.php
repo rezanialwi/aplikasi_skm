@@ -47,7 +47,7 @@
 
 	<hr class="line-title">
 	<p align="center" style="font-size: 18px;">
-		Laporan Data Responden
+		Laporan Data Responden Tipikor
 	</p>
 
 	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
