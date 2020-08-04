@@ -55,7 +55,7 @@
 									<tr>
 										<th>No</th>
 										<th>Bagian</th>
-										<th>Nama</th>
+										<th>Responden</th>
 										<th>Umur</th>
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>

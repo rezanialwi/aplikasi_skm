@@ -182,7 +182,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>
@@ -289,7 +288,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>
@@ -396,7 +394,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>
@@ -503,7 +500,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>
@@ -610,7 +606,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>
@@ -717,7 +712,6 @@
                 </div>
  
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                     <button class="btn btn-info">Simpan</button>
                 </div>
             </form>

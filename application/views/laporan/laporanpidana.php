@@ -47,15 +47,15 @@
 
 	<hr class="line-title">
 	<p align="center" style="font-size: 18px;">
-		Laporan Data Responden
+		Laporan Data Responden Pidana
 	</p>
-
+<br>
 	<table class="table table-bordered"  width="100%" cellspacing="0">
 								<thead>
 									<tr>
 										<th>No</th>
 										<th>Bagian</th>
-										<th>Nama</th>
+										<th>Responden</th>
 										<th>Umur</th>
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>
