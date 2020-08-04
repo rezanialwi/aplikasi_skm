@@ -11,6 +11,9 @@ class Overview extends CI_Controller {
 	public function index()
 	{
 		$nilai['total_pesurvei'] = $this->mod_admin->get_total();
+		$nilai['total_puas'] $this->mod_admin->get_totalPuas();
+		$nilai['total_cukup'] $this->mod_admin->get_totalCukup();
+		$nilai['total_tidak'] $this->mod_admin->get_totalTidak();
         // load view admin/overview.php
         $this->load->view("admin/overview", $nilai);
 	}
