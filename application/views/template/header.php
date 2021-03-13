@@ -11,9 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="<?php echo base_url()  ?>assets/img/logo/logo.png">
+ 
 
     <title>SKMH</title>
+     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/logo3.ico">
+       <link rel="stylesheet" href="<?php echo base_url().'assets3/css/morris.css'?>">
 
   <!-- Custom fonts for this template -->
    <link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
@@ -90,7 +92,7 @@
       <hr class="sidebar-divider my-0">
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="logout.php">
+        <a class="nav-link" href="<?php echo base_url('login/logout'); ?>" onclick="return confirm('Yakin Ingin Keluar ? ');">
           <i class="fas fa-fw fa-sign-out-alt"></i>
           <span>Logout</span></a>
       </li>

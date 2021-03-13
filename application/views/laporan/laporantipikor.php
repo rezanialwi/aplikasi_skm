@@ -60,8 +60,9 @@
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>
 										<th>Pendidikan</th>
+										<th>Kritik & Saran</th>
 										<th>Kepuasan</th>
-										<th>Waktu</th>
+										<th>Tanggal</th>
 									</tr>
 								</thead>
 							</tbody>
@@ -74,8 +75,9 @@
 											<td><?= $tipikor->jenis_kelamin ?></td>
 											<td><?= $tipikor->pekerjaan_responden ?></td>
 											<td><?= $tipikor->pendidikan_responden ?></td>
+											<td><?= $tipikor->saran ?></td>
 											<td><?= $tipikor->tingkat_kepuasan ?></td>
-											<td><?= $tipikor->waktu_input ?></td>
+											<td><?= shortdate_indo($tipikor->tanggal) ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>

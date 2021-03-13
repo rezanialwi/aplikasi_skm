@@ -17,8 +17,8 @@ class Mod_modal extends CI_Model {
 		return ($query->row());
 	}*/
 
-	function simpan_responden($id_bagian,$nama_responden,$umur_responden,$jenis_kelamin,$pekerjaan_responden,$pendidikan_responden,$tingkat_kepuasan){
-		$hasil=$this->db->query("INSERT INTO responden (id_bagian,nama_responden,umur_responden,jenis_kelamin,pekerjaan_responden,pendidikan_responden,tingkat_kepuasan) VALUES ('$id_bagian','$nama_responden','$umur_responden','$jenis_kelamin','$pekerjaan_responden','$pendidikan_responden','$tingkat_kepuasan')");
+	function simpan_responden($id_bagian,$nama_responden,$umur_responden,$jenis_kelamin,$pekerjaan_responden,$pendidikan_responden,$saran, $tanggal,$tingkat_kepuasan){
+		$hasil=$this->db->query("INSERT INTO responden (id_bagian,nama_responden,umur_responden,jenis_kelamin,pekerjaan_responden,pendidikan_responden,saran,tanggal,tingkat_kepuasan) VALUES ('$id_bagian','$nama_responden','$umur_responden','$jenis_kelamin','$pekerjaan_responden','$pendidikan_responden','$saran','$tanggal','$tingkat_kepuasan')");
 		return $hasil;
 	}
 	/*------------tidak mau------------

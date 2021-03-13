@@ -18,14 +18,50 @@ class Mod_tipikor extends CI_Model {
 		$query = $this->db->get($this->_table);
 		return $query->num_rows();
 	}
-	//public function kode_tipikor(){
-	//	$kodetipikor = $this->db->query('SELECT id_bagian FROM responden WHERE id_bagian=1');
-	//	return $kodetipikor->result();
-	//}
 
-	//function show_tipikor(){
-	//	$hasiltipikor=$this->db->query('SELECT * FROM RESPONDEN');
-	//	return $hasiltipikor;
-	//	$this->load->view('admin/admin_tipikor');
-	//}
+	 function hapus_data($where,$table){
+	$this->db->where($where);
+	$this->db->delete($table);
+    }
+
+    function edit_data($where,$table){		
+		return $this->db->get_where($table,$where);
+	}
+ 
+	function update_data($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}	
+	  function get_product_keyword($keyword){
+      // $this->db->join('pegawai', 'pegawai.id_pegawai = peminjaman.id_pegawai', 'left');
+    	$this->db->join('bagian', 'bagian.id_bagian = responden.id_bagian', 'left');
+		$this->db->where('responden.id_bagian', '5');	
+		$this->db->like('nama_responden',$keyword);
+      $this->db->or_like('umur_responden',$keyword);
+      $this->db->or_like('jenis_kelamin',$keyword);
+      $this->db->or_like('pekerjaan_responden',$keyword);
+      $this->db->or_like('pendidikan_responden',$keyword);
+      $this->db->or_like('saran',$keyword);
+      $this->db->or_like('tingkat_kepuasan',$keyword);
+      $this->db->or_like('tanggal',$keyword);
+			return $this->db->get('responden')->result();
+		}
+
+	function get($batas=NULL,$offset=NULL,$cari=NULL)
+  {
+      if ($batas != NULL) {
+        $this->db->limit($batas,$offset);
+      }
+      
+	return $this->db->get($this->_table)->result();
+  }
+  
+  
+     function jumlah_row($search)
+  {
+    $this->db->or_like($search);
+    $query = $this->db->get($this->_table);
+
+    return $query->num_rows();
+  }
 }

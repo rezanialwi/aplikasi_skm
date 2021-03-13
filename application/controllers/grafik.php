@@ -9,10 +9,27 @@ class Grafik extends CI_Controller {
 		$this->load->model('mod_survei');
 	}
 
-	public function GetResult(){
-		$data = $this->mod_survei->GetResult();
-		return $this->load->view('admin/overview', $data, true);
+	 function index(){
+		$con = array(
+			"content" => $this->Content()
+			);
+		$this->load->view('web2', $con);
 	}
+	public function Result(){
+		$con = array(
+			"content" => $this->GetResult()
+			);
+		$this->load->view('web2', $con);	
+	}
+	private function Content(){
+		return $this->load->view('content', array(), true);
+	}
+	public function GetResult(){
+		
+		$data = $this->mod_survei->GetResult();
+		return $this->load->view('result', $data, true);
+	}
+
 
 	/*public function AddSurveiGender(){
 		$gen = array(

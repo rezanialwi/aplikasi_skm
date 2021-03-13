@@ -22,10 +22,23 @@ class ProsesModal extends CI_Controller {
 		$jenis_kelamin=$this->input->post('jenis_kelamin');
 		$pekerjaan_responden=$this->input->post('pekerjaan_responden');
 		$pendidikan_responden=$this->input->post('pendidikan_responden');
+		$saran=$this->input->post('saran');
+		$tanggal=$this->input->post('tanggal');
 		$tingkat_kepuasan=$this->input->post('tingkat_kepuasan');
-		$this->mod_modal->simpan_responden($id_bagian,$nama_responden,$umur_responden,$jenis_kelamin,$pekerjaan_responden,$pendidikan_responden,$tingkat_kepuasan);
-		redirect('ProsesModal');
-	}
+		$sis = $this->mod_modal->simpan_responden($id_bagian,$nama_responden,$umur_responden,$jenis_kelamin,$pekerjaan_responden,$pendidikan_responden,$saran,$tanggal,$tingkat_kepuasan);
+		// redirect('prosesmodal/alert');
+		if(!$sis ){
+		echo "<script>alert('Gagal di tambahkan!');history.go(-1);</script>";
+		} else{echo "<script>alert('Terimakasih untuk Partisipasinya :)');history.go(-1);</script>";
+		
+		}
+			}
+
+	
+	// function alert(){
+	
+    //    $this->load->view('alert_selesai');
+	// }
 
 
 

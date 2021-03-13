@@ -7,6 +7,7 @@ class Cetak_hukum extends CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('mod_hukum');
+		$this->load->helper('tgl_indo');
 	}
 
 	public function index(){

@@ -7,6 +7,7 @@ class Cetak_tipikor extends CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('mod_tipikor');
+		$this->load->helper('tgl_indo');
 	}
 
 	public function index(){

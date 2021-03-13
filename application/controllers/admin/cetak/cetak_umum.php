@@ -7,6 +7,7 @@ class Cetak_umum extends CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('mod_umum');
+		$this->load->helper('tgl_indo');
 	}
 
 	public function index(){

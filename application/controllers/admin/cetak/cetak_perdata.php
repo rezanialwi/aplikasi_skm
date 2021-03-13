@@ -7,6 +7,7 @@ class Cetak_perdata extends CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('mod_perdata');
+		$this->load->helper('tgl_indo');
 	}
 
 	public function index(){

@@ -7,6 +7,7 @@ class Cetak_pidana extends CI_Controller{
 	{
 		parent::__construct();
 		$this->load->model('mod_pidana');
+		$this->load->helper('tgl_indo');
 	}
 
 	public function index(){

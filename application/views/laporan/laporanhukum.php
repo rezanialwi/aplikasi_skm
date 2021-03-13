@@ -60,8 +60,10 @@
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>
 										<th>Pendidikan</th>
+										<th>Kritik & Saran</th>
 										<th>Kepuasan</th>
-										<th>Waktu</th>
+										<th>Tanggal</th>
+										
 									</tr>
 								</thead>
 							</tbody>
@@ -74,8 +76,10 @@
 											<td><?= $hukum->jenis_kelamin ?></td>
 											<td><?= $hukum->pekerjaan_responden ?></td>
 											<td><?= $hukum->pendidikan_responden ?></td>
+											<td><?= $hukum->saran ?></td>
 											<td><?= $hukum->tingkat_kepuasan ?></td>
-											<td><?= $hukum->waktu_input ?></td>
+											<td><?= shortdate_indo($hukum->tanggal) ?></td>
+											
 										</tr>
 									<?php endforeach ?>
 								</tbody>

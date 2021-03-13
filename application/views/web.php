@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Survei Kepuasan Pelanggan</title>
+	<title>Survei Kepuasan Masyarakat</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/img/logo3.ico">
 	<!-- javascript -->
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
@@ -27,54 +28,54 @@
 </div>
 <div class="row konten" style="padding-top:3.5em; height:26.9em;">
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" style="background-color:#171717">
+			<div class="thumbnail" style="background-color:#ab0000">
 				<a data-toggle="modal" data-target="#modalPidana" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/pidana.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">Pidana</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" style="background-color:#001191;">
+			<div class="thumbnail" style="background-color:#8B0000;">
 				<a  data-toggle="modal" data-target="#modalHukum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/hukum.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">Hukum</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail"  style="background-color:#ab0000;">
+			<div class="thumbnail"  style="background-color:#6495ED;">
 				<a  data-toggle="modal" data-target="#modalUmum" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/umum.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">Umum & Keuangan</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" style="background-color:#6900ab; color:white;">
+			<div class="thumbnail" style="background-color:#32CD32; color:white;">
 				<a  data-toggle="modal" data-target="#modalPerdata" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/perdata.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">Perdata</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" style="background-color:#f20000;">
+			<div class="thumbnail" style="background-color:#DAA520;">
 				<a  data-toggle="modal" data-target="#modalTipikor" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/tipikor.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">Tipikor</h4>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-2 col-md-2">
-			<div class="thumbnail" style="background-color:#00aee3; color:white;">
+			<div class="thumbnail" style="background-color:#483D8B; color:white;">
 				<a  data-toggle="modal" data-target="#modalPHI" href="#" class="viewContact"><img
-						src="<?php echo base_url() ?>assets/img/logo/courtlogo2.png" width="70" alt=""></a>
+						src="<?php echo base_url() ?>assets/img/logo/phi.png" width="70" alt=""></a>
 				<div class="caption">
 					<h4 style="font-family:Roboto; color:white;">PHI</h4>
 				</div>
@@ -94,9 +95,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian Pidana</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="1"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="1"  required readonly="">
                         </div>
                     </div>
  
@@ -155,6 +156,23 @@
                         </div>
                     </div>
 
+                    
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
+                        </div>
+                    </div>
+
+
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
@@ -196,9 +214,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian Hukum</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="2"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="2"  required readonly="">
                         </div>
                     </div>
  
@@ -257,6 +275,23 @@
                         </div>
                     </div>
 
+                     
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label class="control-label col-xs-3" >Tingkat Kepuasan</label>
                         <div class="col-xs-8">
@@ -298,9 +333,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian Umum & Keuangan</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="3"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="3"  required readonly="">
                         </div>
                     </div>
  
@@ -356,6 +391,23 @@
                                 <option value="S2">S2</option>
                                 <option value="S3">S3</option>
                                 </select>
+                        </div>
+                    </div>
+
+                     
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
                         </div>
                     </div>
 
@@ -400,9 +452,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian Perdata</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="4"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="4"  required readonly="">
                         </div>
                     </div>
  
@@ -458,6 +510,23 @@
                                 <option value="S2">S2</option>
                                 <option value="S3">S3</option>
                                 </select>
+                        </div>
+                    </div>
+
+                     
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
                         </div>
                     </div>
 
@@ -502,9 +571,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian Tipikor</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="5"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="5"  required readonly="">
                         </div>
                     </div>
  
@@ -560,6 +629,23 @@
                                 <option value="S2">S2</option>
                                 <option value="S3">S3</option>
                                 </select>
+                        </div>
+                    </div>
+
+                     
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
                         </div>
                     </div>
 
@@ -604,9 +690,9 @@
                 <div class="modal-body">
 
                 	<div class="form-group">
-                        <label class="control-label col-xs-3" >Bagian</label>
+                        <label class="control-label col-xs-8" >Bagian PHI</label>
                         <div class="col-xs-8">
-                            <input name="id_bagian" class="form-control" type="text" placeholder="" value="6"  required readonly="">
+                            <input name="id_bagian" class="form-control" type="hidden" placeholder="" value="6"  required readonly="">
                         </div>
                     </div>
  
@@ -662,6 +748,23 @@
                                 <option value="S2">S2</option>
                                 <option value="S3">S3</option>
                                 </select>
+                        </div>
+                    </div>
+
+                     
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" >Kritik & Saran</label>
+                        <div class="col-xs-8">
+                             <textarea name="saran" class="form-control" rows="5" required>
+                               
+                                </textarea>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <label class="control-label col-xs-3" >Tanggal</label>
+                        <div class="col-xs-8">
+                            <input name="tanggal" class="form-control" type="date" required>
                         </div>
                     </div>
 
@@ -720,7 +823,7 @@
 	<hr/>	
 </div>
 <footer class="page-footer font-small pt-4" style="background-color:#000; color:#fff; height:25px;">
-		<div class="footer-copyright text-center py-3">© 2020 Copyright: Pengadilan Negeri Banjarmasin</div>
+		<div class="footer-copyright text-center py-3">Hak Cipta &copy; Pengadilan Negeri Banjarmasin 2020</div>
 </footer>
 </body>
 </html>

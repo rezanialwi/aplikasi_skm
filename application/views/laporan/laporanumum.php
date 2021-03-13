@@ -60,8 +60,9 @@
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>
 										<th>Pendidikan</th>
+										<th>Kritik & Saran</th>
 										<th>Kepuasan</th>
-										<th>Waktu</th>
+										<th>Tanggal</th>
 									</tr>
 								</thead>
 							</tbody>
@@ -74,8 +75,9 @@
 											<td><?= $umum->jenis_kelamin ?></td>
 											<td><?= $umum->pekerjaan_responden ?></td>
 											<td><?= $umum->pendidikan_responden ?></td>
+											<td><?= $umum->saran ?></td>
 											<td><?= $umum->tingkat_kepuasan ?></td>
-											<td><?= $umum->waktu_input ?></td>
+											<td><?= shortdate_indo($umum->tanggal) ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>

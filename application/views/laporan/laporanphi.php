@@ -60,22 +60,24 @@
 										<th>Jenis Kelamin</th>
 										<th>Pekerjaan</th>
 										<th>Pendidikan</th>
+										<th>Kritik & Saran</th>
 										<th>Kepuasan</th>
-										<th>Waktu</th>
+										<th>Tanggal</th>
 									</tr>
 								</thead>
 							</tbody>
-							<?php foreach ($all_phi as $phi): ?>
+							<?php foreach ($all_phi as $perdata): ?>
 								<tr>
 											<td><?= $no++ ?></td>
-											<td><?= $phi->nama_bagian ?></td>
-											<td><?= $phi->nama_responden ?></td>
-											<td><?= $phi->umur_responden ?></td>
-											<td><?= $phi->jenis_kelamin ?></td>
-											<td><?= $phi->pekerjaan_responden ?></td>
-											<td><?= $phi->pendidikan_responden ?></td>
-											<td><?= $phi->tingkat_kepuasan ?></td>
-											<td><?= $phi->waktu_input ?></td>
+											<td><?= $perdata->nama_bagian ?></td>
+											<td><?= $perdata->nama_responden ?></td>
+											<td><?= $perdata->umur_responden ?></td>
+											<td><?= $perdata->jenis_kelamin ?></td>
+											<td><?= $perdata->pekerjaan_responden ?></td>
+											<td><?= $perdata->pendidikan_responden ?></td>
+											<td><?= $perdata->saran ?></td>
+											<td><?= $perdata->tingkat_kepuasan ?></td>
+											<td><?= shortdate_indo($perdata->tanggal) ?></td>
 										</tr>
 									<?php endforeach ?>
 								</tbody>
